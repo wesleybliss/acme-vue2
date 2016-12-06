@@ -1,4 +1,60 @@
-// Colors
+/* Coolors Exported Palette - coolors.co/114b5f-028090-f8fce0-456990-f45b69 */
 
-green = #41b883
-blue = #35495e
+/* HSL */
+$color1 = hsla(195%, 70%, 22%, 1)
+$color2 = hsla(187%, 97%, 29%, 1)
+$color3 = hsla(69%, 82%, 93%, 1)
+$color4 = hsla(211%, 35%, 42%, 1)
+$color5 = hsla(355%, 87%, 66%, 1)
+
+/* RGB */
+$color1 = rgba(17, 75, 95, 1)
+$color2 = rgba(2, 128, 144, 1)
+$color3 = rgba(248, 252, 224, 1)
+$color4 = rgba(69, 105, 144, 1)
+$color5 = rgba(244, 91, 105, 1)
+
+/* Color aliases for convenience */
+$color-primary = $color4
+$color-primary-dark = $color1
+$color-alt = $color2
+$color-light = $color3
+$color-accent = $color5
+
+/**
+ * Z-index scaling
+ */
+$z-base = 1
+$z-utmost = 1000
+
+
+/**
+ * Font Awesome overrides
+ */
+$fa-font-path           ?= "/src/fonts"
+//$fa-font-path         ?= "//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts" // for referencing Bootstrap CDN font files directly
+$fa-font-size-base      ?= 14px
+$fa-line-height-base    ?= 1
+$fa-css-prefix          ?= fa
+$fa-version             ?= "4.6.1"
+$fa-border-color        ?= #eee
+$fa-inverse             ?= #fff
+$fa-li-width            ?= (30em / 14)
+
+/**
+ * Global menu
+ */
+$menu-bars-color     = $color-primary-dark
+$menu-toggle-rounded = false
+
+$menu-open-bars-color = rgba(black, 0.7)
+
+
+/**
+ * Toast notifications
+ * https://github.com/ktsn/vuex-toast
+ */
+$toast-bg-info = #fefefe
+$toast-bg-success = #ffb39d
+$toast-bg-warning = #f8ac29
+$toast-bg-danger = #fd5130

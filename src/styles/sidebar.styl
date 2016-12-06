@@ -1,0 +1,37 @@
+
+nav#sidebar
+    
+    margin 0
+    padding 0
+    color black
+    background-color darken($color-primary-dark, 40%)
+    transition left 0.3s
+    transition-timing-function ease-out
+    
+    ul
+        margin 0
+        padding 0
+        
+        li a
+            display block
+            padding 16px 16px 16px 20px
+            color #eee
+            text-decoration none
+            
+            &:hover, &:active:hover, &:visited:hover
+                color white
+                background-color rgba($color-primary, 0.2)
+            
+            &.router-link-active
+                background-color rgba($color-primary, 0.3)
+    
+    ul#branding
+        li a
+            display inline-block
+            width auto
+            margin-bottom 30px
+            &:hover, &:active:hover, &:visited:hover
+                background transparent
+        
+        &:hover + ul
+            opacity 0.4

@@ -1,0 +1,52 @@
+global-reset()
+normalize-css()
+
+.row
+    grid(direction: 'row')
+
+.row-stretch
+    display flex
+    height 100%
+    flex 1
+    grid(direction: 'row', cells-align: 'stretch')
+
+section
+    margin-bottom 20px
+
+#app
+    display flex
+    min-height 100%
+    flex-direction column
+
+#menu-toggle
+    position fixed
+    top 20px
+    right 20px
+    width 28px
+    height 28px
+    z-index $z-utmost
+    +above(rem-calc(breakpoints[lg]))
+        display none
+
+nav#sidebar
+    position fixed
+    top 0
+    left -100%
+    width 100%
+    height 100%
+    +above(rem-calc(breakpoints[lg]))
+        position relative
+        top 0
+        left 0
+        width auto
+        height auto
+        cell(18, 100, g: 0)
+
+nav#sidebar.open
+    left 0
+
+section#main
+    cell(100, 100, g: 0)
+    +above(rem-calc(breakpoints[lg]))
+        cell(82, 100, g: 0)
+

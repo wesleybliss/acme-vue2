@@ -107,8 +107,7 @@ module.exports = {
     stylus: {
         use: [
             require('axis')({ implicit: false }),
-            /*require('s-grid')(),*/
-            require('jeet')(),
+            require('s-grid')(),
             require('rupture')(),
             require('fa-stylus')()
         ],

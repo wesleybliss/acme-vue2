@@ -1,0 +1,21 @@
+
+button, .btn,
+[type="button"],
+[role="button"],
+[type="submit"]
+    button()
+    margin 4px 8px
+    &:first-child
+        margin-left 0
+
+.btn-success
+    button: green
+
+.btn-error
+    button: red
+
+.btn-warning
+    button: orange
+
+.btn-hot
+    button: $color-accent

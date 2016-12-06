@@ -1,0 +1,82 @@
+
+$bar-thickness = 2px
+
+$open-top-offset = 18px
+$open-top-offset2 = ($open-top-offset - 10px)
+$open-left-offset = ($open-top-offset - 13px)
+
+$closed-top-01 = 2px
+$closed-top-02 = ($closed-top-01 + ($open-top-offset - 9px))
+$closed-top-03 = ($closed-top-02 + ($open-top-offset - 9px))
+
+$open-transition-speed = .4s
+
+
+.menu-toggle-animated
+    span
+        display block
+        position absolute
+        height $bar-thickness
+        width 50%
+        opacity 1
+        background-color    $menu-bars-color
+        -webkit-transform   rotate(0deg)
+        -moz-transform      rotate(0deg)
+        -o-transform        rotate(0deg)
+        transform           rotate(0deg)
+        -webkit-transition  $open-transition-speed ease-in-out
+        -moz-transition     $open-transition-speed ease-in-out
+        -o-transition       $open-transition-speed ease-in-out
+        transition          $open-transition-speed ease-in-out
+        &:nth-child(even)
+            left 50%
+            if $menu-toggle-rounded
+                border-radius 0 9px 9px 0
+        &:nth-child(odd)
+            left 0px
+            if $menu-toggle-rounded
+                border-radius 9px 0 0 9px
+    &.open
+        span
+            opacity 0.5
+            background-color $menu-open-bars-color
+            &:nth-child(1)
+                left $open-left-offset
+                top $open-top-offset2
+            &:nth-child(2)
+                left calc(50% - $open-left-offset)
+                top $open-top-offset2
+            &:nth-child(3)
+                left -50%
+                opacity 0
+            &:nth-child(4)
+                left 100%
+                opacity 0
+            &:nth-child(5)
+                left $open-left-offset
+                top $open-top-offset
+            &:nth-child(6)
+                left calc(50% - $open-left-offset)
+                top $open-top-offset
+
+.menu-toggle-animated span:nth-child(1), .menu-toggle-animated span:nth-child(2)
+    top $closed-top-01
+
+.menu-toggle-animated span:nth-child(3), .menu-toggle-animated span:nth-child(4)
+    top $closed-top-02
+
+.menu-toggle-animated span:nth-child(5), .menu-toggle-animated span:nth-child(6)
+    top $closed-top-03
+
+.menu-toggle-animated.open span:nth-child(1),.menu-toggle-animated.open span:nth-child(6)
+    -webkit-transform rotate(45deg)
+    -moz-transform rotate(45deg)
+    -o-transform rotate(45deg)
+    transform rotate(45deg)
+
+.menu-toggle-animated.open span:nth-child(2),.menu-toggle-animated.open span:nth-child(5)
+    -webkit-transform rotate(-45deg)
+    -moz-transform rotate(-45deg)
+    -o-transform rotate(-45deg)
+    transform rotate(-45deg)
+

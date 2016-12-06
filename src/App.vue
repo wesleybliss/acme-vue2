@@ -1,15 +1,34 @@
 <template lang="pug">
     #app
-        sidebar
-        router-view
-        div
-            button(
-                @click="setLang(lang)",
-                v-for="lang in locales",
-                :disabled="isLang(lang)") {{ $t('locales.'+ lang) }}
-        hr
-        div
-            button(@click="increment") {{ $tc('messages.counter', countPlural, { n: $store.state.count }) }}
+        .row-stretch
+            
+            sidebar
+            
+            section#main
+                header
+                    h1 ACME Corp.
+                
+                router-view
+                
+                div
+                    button(
+                        @click="setLang(lang)",
+                        v-for="lang in locales",
+                        :disabled="isLang(lang)") {{ $t('locales.'+ lang) }}
+                hr
+                div
+                    button(@click="increment") {{ $tc('messages.counter', countPlural, { n: $store.state.count }) }}
+                
+            a#menu-toggle(href="#")
+                .menu-toggle-animated
+                    span
+                    span
+                    span
+                    span
+                    span
+                    span
+            
+            //- toast(position="se")    
 </template>
 
 <script>

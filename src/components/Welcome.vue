@@ -1,17 +1,9 @@
-<template>
-    <div>
-        <p>
-            {{ $t('messages.welcome') }}
-        </p>
-        <p>
-            <router-link to="/hello/from%20ACME">{{ $t('buttons.hello') }}</router-link>
-        </p>
-    </div>
+<template lang="pug">
+    div
+        p {{ $t('messages.welcome') }}
+        p: router-link(to="/hello/from%20ACME") {{ $t('buttons.hello') }}
 </template>
 
 <script>
 export default {}
 </script>
-
-<style>
-</style>
