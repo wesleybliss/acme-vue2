@@ -1,0 +1,81 @@
+// This file is injected in every components
+// Use it wisely ;)
+@import "jeet"
+@import "rupture"
+
+@import "variables"
+@import "mixins"
+
+
+
+//@import "typus" // base styles
+
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html
+    font-size 62.5%
+body
+    font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    font-size 1.5em
+    line-height 1.6
+    font-weight 400
+    color #222
+
+html
+    +below(600px) // rupture
+        font-size 50%
+
+#app
+    align() // jeet
+    text-align center
+
+a
+    color cornflowerblue // custom variable
+
+button,
+button:active,
+button:focus
+    border 0
+    background cornflowerblue
+    color white
+    cursor pointer
+    margin 0 5px
+    &:disabled,
+    &:hover
+        background blue
+    &:disabled
+        cursor default
+
+.icon-logo
+    margin-bottom 2.5rem
+
+h1
+    color cornflowerblue
+
+
+h1, h2, h3, h4, h5, h6
+    margin-top 0
+    margin-bottom 2rem
+    font-weight 600
+h1
+    font-size 4.0rem
+    line-height 1.2
+h2
+    font-size 3.6rem
+    line-height 1.25
+h3
+    font-size 3.0rem
+    line-height 1.3
+h4
+    font-size 2.4rem
+    line-height 1.35
+h5
+    font-size 1.8rem
+    line-height 1.5
+h6
+    font-size 1.5rem
+    line-height 1.6
+
+p
+    margin-top 0
