@@ -1,7 +1,7 @@
 {
-  "name": "oak-associate-tool",
+  "name": "acme-vue2",
   "version": "1.0.0",
-  "description": "OAK Labs",
+  "description": "ACME Corp. Vue2 Starter",
   "author": "Wesley Bliss <wesley.bliss@gmail.com>",
   "private": true,
   "scripts": {
