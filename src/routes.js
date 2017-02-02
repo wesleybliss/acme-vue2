@@ -1,18 +1,18 @@
-import WelcomeComponent from 'components/Welcome'
-import HelloComponent from 'components/Hello'
-import LoginComponent from 'components/Login'
+import WelcomePage from 'pages/Welcome'
+import HelloPage from 'pages/Hello'
+import LoginPage from 'pages/Login'
 
 export default [
     {
         path: '/',
-        component: WelcomeComponent
+        component: WelcomePage
     },
     {
         path: '/hello/:name',
-        component: HelloComponent
+        component: HelloPage
     },
     {
         path: '/login',
-        component: LoginComponent
+        component: LoginPage
     }
 ]

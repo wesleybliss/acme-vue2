@@ -5,7 +5,7 @@ import I18n from './i18n'
 import router from './router'
 import App from './App'
 
-Vue.use(I18n, ['fr', 'en'])
+Vue.use(I18n, ['en', 'fr'])
 
 /* eslint-disable no-new */
 new Vue({

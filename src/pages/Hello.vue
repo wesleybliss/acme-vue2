@@ -1,9 +1,3 @@
-<template lang="pug">
-    .hello
-        h1 {{ msg }}
-        p: router-link(to="/") {{ $t('buttons.home') }}
-</template>
-
 <script>
 
 export default {
@@ -19,3 +13,11 @@ export default {
 }
 
 </script>
+
+<template lang="pug">
+
+.hello
+    h1 {{ msg }}
+    p: router-link(to="/") {{ $t('buttons.home') }}
+
+</template>

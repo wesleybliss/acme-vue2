@@ -21,6 +21,7 @@ module.exports = {
             'locales': path.resolve(__dirname, '../src/locales'),
             'src': path.resolve(__dirname, '../src'),
             'assets': path.resolve(__dirname, '../src/assets'),
+            'pages': path.resolve(__dirname, '../src/pages'),
             'components': path.resolve(__dirname, '../src/components')
         }
     },

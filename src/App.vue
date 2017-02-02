@@ -30,6 +30,7 @@ export default {
 </script>
 
 <template lang="pug">
+
 #app
     .row-stretch
         
@@ -60,4 +61,5 @@ export default {
                 span
         
         //- toast(position="se")
+
 </template>
