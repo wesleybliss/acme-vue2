@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --progress --watch",
-    "build": "NODE_ENV=production webpack --display normal",
-    "removed": "extend: ^3.0.1"
+    "build": "NODE_ENV=production webpack --display normal"
   },
   "dependencies": {
     "axios": "^0.16.1",
