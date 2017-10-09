@@ -18,6 +18,6 @@ export default {
 
 .hello
     h1 {{ msg }}
-    p: router-link(to="/") {{ $t('buttons.home') }}
+    p: router-link(to="/") Home
 
 </template>
