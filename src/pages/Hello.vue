@@ -3,7 +3,7 @@
 export default {
     computed: {
         msg () {
-            return this.$t('messages.hello', { name: this.name })
+            return 'Hello ' + this.name
         },
         name () {
             const name = this.$route.params.name

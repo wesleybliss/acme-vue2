@@ -12,7 +12,7 @@ nav#sidebar
             img(src="../assets/logo.png", width="100")
     ul
         li
-            router-link(to="/hello/from%20ACME") {{ $t('buttons.hello') }}
+            router-link(to="/hello/from%20ACME") Hello
             router-link(to="login") Login
 
 </template>
