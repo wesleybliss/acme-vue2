@@ -1,6 +1,6 @@
 const path = require('path')
 const config = require('./build.config')
-const basicAuth = require('../../server/src/utils/basic-auth')
+// const basicAuth = require('../../server/src/utils/basic-auth')
 
 /**
  * @todo
