@@ -1,14 +1,10 @@
-import axios from 'axios'
+import { createAxiosInstance, authHeaders } from '../utils/networking'
 
-/*const http = axios.create({
-    baseURL: 'http://localhost:3000',
-    timeout: 1000,
-    headers: { 'X-Custom-Header': 'foobar' }
-})*/
+const http = createAxiosInstance()
 
-axios.defaults.baseURL = 'http://localhost:3000'
-axios.defaults.headers = axios.defaults.headers || {}
-axios.defaults.headers['api_client'] = 'abc123'
+// axios.defaults.baseURL = 'http://localhost:3000'
+// axios.defaults.headers = axios.defaults.headers || {}
+// axios.defaults.headers['api_client'] = 'abc123'
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 
 export const test = () => axios.get('/')

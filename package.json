@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --progress --watch",
-    "build": "NODE_ENV=production webpack --display normal"
+    "start": "webpack-dev-server --config=build/webpack.config.js --progress --watch",
+    "build": "NODE_ENV=production webpack --config=build/webpack.config.js --display normal",
+    "pm2": "NODE_ENV=production PORT=7202 echo '@todo set this up: pm2 start src/server.js --name foo-app'"
   },
   "dependencies": {
     "axios": "^0.16.1",

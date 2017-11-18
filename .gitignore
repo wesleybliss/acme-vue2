@@ -5,6 +5,7 @@ npm-debug.log
 test/unit/coverage
 test/e2e/reports
 selenium-debug.log
+.nyc_output
 
 logs/*
 !.gitkeep
@@ -29,3 +30,5 @@ docs
 .env
 .env*
 !.env.sample
+
+public/
